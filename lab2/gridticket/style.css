@@ -12,12 +12,14 @@ header {
     font-size: 11px;
     letter-spacing: 5px;
     color: white;
+    margin-top: 70px;
 }
 
 h1 {
     font-size: 38px;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     color: white;
+    margin-top: -70px;
     }
 
 h2 {
@@ -46,9 +48,10 @@ span {
 
 .maingrid {
     display: grid;
-    width: 283px;
+    width: 300px;
     height: 700px;
-    grid-template: 30% 60% 20% 20% / repeat(2, 1fr);
+    text-align: center;
+    grid-template: 15% 71% 7% 7% / 50% 50%;
 }
 
 .title {
@@ -64,7 +67,7 @@ span {
 
 }
 
-.qrcode, .price {
+.qrcode, .price, .title {
     grid-column: 1/3;
 }
 
@@ -79,6 +82,7 @@ span {
     header {
         font-size: 11px;
         color: black;
+        margin-top: 0px;
     }
     
     h1 {
