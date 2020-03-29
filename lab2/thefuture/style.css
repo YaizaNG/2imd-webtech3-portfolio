@@ -1,0 +1,54 @@
+p {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.maingrid {
+    display: grid;
+    text-align: center;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.maingrid > div {
+    display: grid;
+    align-items: center;
+    margin: 5px;
+}
+
+.redbox {
+    background-color: red;
+}
+
+.bluebox {
+    background-color: aqua;
+}
+
+.yellowbox {
+    background-color: yellow;
+}
+
+
+@media screen and (min-width: 460px){
+    .maingrid {
+        grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 800px){
+
+    .maingrid {
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+
+    .bluebox {
+        grid-area: 1/3/4/4;
+    }
+
+    .yellowbox {
+        grid-area: 2/4/4/6;
+    }
+    
+}
