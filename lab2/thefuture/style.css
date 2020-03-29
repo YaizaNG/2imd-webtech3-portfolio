@@ -1,0 +1,24 @@
+p {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.maingrid {
+    display: grid;
+    text-align: center;
+
+}
+
+.redbox {
+    background-color: red;
+}
+
+.bluebox {
+    background-color: aqua;
+}
+
+.yellowbox {
+    background-color: yellow;
+}
+
